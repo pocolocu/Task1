@@ -4,6 +4,5 @@ def process_string(s: str) -> tuple[str, bool]:
     contains_punctuation = any(ch in ",." for ch in s)
     return ("".join(extracted_vowels), contains_punctuation)
 
-# Приклад використання
 input_string = "abc.de,,fg"
 print(process_string(input_string))  # ('ae', True)
